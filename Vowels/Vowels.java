@@ -7,7 +7,7 @@ class Vowels {
         for(int i = 0; i < lowercase.length(); i++) {
             char c = lowercase.charAt(i);
             //System.out.println(c);
-            if((c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') && !Character.isDigit(c)) {
+            if(Character.isLetter(c) && (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')) {
                 vowelCount++;
             }
         }
